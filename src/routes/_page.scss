@@ -1,0 +1,59 @@
+div.page-wrapper {
+	max-width: 40rem;
+	margin: auto;
+	padding-top: 4rem;
+}
+
+div.wrapper {
+	--box-shadow: unset;
+	--box-shadow-focus: 
+		inset 0 0 0 1.5px hsla(207, 100%, 50%, 0.8),
+		0 2px 5px 1px rgba(154,174,181,0.17),
+		0 0 0 3px hsla(211, 100%, 60%, 0.3);
+		
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	letter-spacing: -0.01em;
+	h1 {
+		color: hsl(228, 100%, 63%);
+		font-weight: 600;
+		font-style: italic;
+	}
+	p {
+		color: hsl(0, 0%, 33%);
+		font-weight: 450;
+		font-size: 0.9rem;
+	}
+	
+	input {
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+		padding: 0.4rem 0.8rem;
+		
+		border-radius: 0.7rem;
+		background: hsl(0, 0%, 87%);
+		border: none;
+		box-shadow: var(--box-shadow);
+		-webkit-appearance: none;
+		-webkit-box-shadow: var(--box-shadow);
+		
+		transition: all ease-in-out 150ms;
+		transition: font-weight ease-out 50ms;
+	}
+	input::placeholder {
+		color: hsl(0, 0%, 20%);
+		font-variation-settings: "slnt" 7;
+	}
+	input:hover::placeholder,
+	input:focus::placeholder {
+		color: hsl(0, 0%, 10%);
+	}
+	input:focus {
+		outline: none;
+		box-shadow: var(--box-shadow-focus);
+		-webkit-box-shadow: var(--box-shadow-focus);
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"baseURL": "https://www.foo.com",
+	"name": "FooCorp",
+	"description": "foo",
+	"author": false,
+	"twitter": "",
+	"favicon": "https://large-assets.notnotjake.com/images/folder-icon.png",
+	"image": "https://assets.foo.com/images/og-image.jpg",
+	"analytics": {
+		"id": ""
+	}
+}
